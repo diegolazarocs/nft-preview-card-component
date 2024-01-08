@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;500&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /*main*/
+  --verydarkblue900: hsl(217, 54%, 11%);
+  /*card*/
+  --verydarkblue800: hsl(216, 50%, 16%);
+  /*line*/
+  --verydarkblue600: hsl(215, 32%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+body {
+  max-width: 24.5rem;
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--verydarkblue900);
+  color: var(--white);
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  margin: 1rem auto;
+}
+
+.card {
+  max-width: 15rem;
+  background-color: var(--verydarkblue800);
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.card h2 {
+  color: rgb(215, 215, 215);
+  margin: 1rem 0;
+}
+.card p {
+  color: var(--softblue);
+  margin: 1rem 0;
+}
+
+.card_values {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--softblue);
+  padding-bottom: 0.5rem;
+}
+.card_eth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: var(--cyan);
+}
+.card_days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: var(--softblue);
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.author img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--white);
+  border-radius: 100%;
+}
+.author h3 {
+  font-size: 0.7rem;
+  color: var(--softblue);
+}
+.author_name {
+  color: var(--cyan);
+}
+
+figure {
+  position: relative;
+  width: 100%;
+}
+.layer {
+  position: absolute;
+  background-color: var(--softblue);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  opacity: 0.5;
+  border-radius: 0.5rem;
+}
+.hiden {
+  display: none;
+}
+
+footer {
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: var(--verydarkblue800);
+  width: 100vw;
+  padding: 0.5rem 0;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
